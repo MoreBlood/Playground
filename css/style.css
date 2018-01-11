@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    width: 100%;
+    background: cornflowerblue;
+    justify-content: space-between;
+}
+
+.header__element {
+    padding: 20px;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.header__element:hover {
+    background: antiquewhite;
+    color: cornflowerblue;
+}
+
+footer {
+    display: flex;
+    background: cadetblue;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer__element {
+    padding: 50px;
+}
+
+article {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+article img {
+    width: 100%;
+    max-width: 500px;
+}
