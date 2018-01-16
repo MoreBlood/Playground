@@ -10,10 +10,10 @@ function getPage(pageName) {
         url: `pages/${pageName.replace('#', '')}.html`,
         dataType: "html",   //expect html to be returned
         success: function(msg) {
-            if(parseInt(msg) !== 0)   
-            {
-                $('article').html(msg);    
-            }
-        }
+            $('article').html(msg);    
+        },
+        error: function(erorr) {
+            $('article').html(`<h2>404</h2> <h3>${erorr.statusText}</h3>`); 
+        },
     });
 };
