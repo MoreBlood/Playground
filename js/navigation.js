@@ -15,12 +15,9 @@ function getTargetTop(elem) {
     
 }
 
-//Smooth scroll when user click link that starts with #
-$('#nav a[href^="#"]').click(function (event) {
 
-    //gets the distance from the top of the 
-    //section refenced in the href.
-    var target = getTargetTop($(this));
+function scrollTo (to) {
+    var target = getTargetTop(to);
     //scrolls to that section.
 
     $('html, body').animate({
@@ -29,5 +26,13 @@ $('#nav a[href^="#"]').click(function (event) {
 
     //prevent the browser from jumping down to section.
     event.preventDefault();
+}
+
+//Smooth scroll when user click link that starts with #
+$('#nav a[href^="#"]').click(function (event) {
+
+    //gets the distance from the top of the 
+    //section refenced in the href.
+    scrollTo($(this));
 
 });
