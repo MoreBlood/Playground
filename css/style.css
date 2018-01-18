@@ -33,9 +33,29 @@ footer {
 article {
     padding: 20px;
     flex-grow: 1;
+    max-width: 600px;
 }
 
 article img {
     width: 100%;
     max-width: 500px;
+}
+
+nav#nav {
+    position: fixed;
+    background: white;
+    width: 200px;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-color: cadetblue;
+    right: 0px;
+}
+
+ul.nav-ul {
+    /* display: flex; */
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+article h1 {
 }
