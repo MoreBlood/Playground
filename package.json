@@ -1,7 +1,7 @@
 {
   "name": "jquery-ajax",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple JS playground",
   "scripts": {
     "start": "http-server -p 8080",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/MoreBlood/jquery-ajax.git"
   },
-  "author": "",
+  "author": "MoreBlood",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MoreBlood/jquery-ajax/issues"
@@ -18,5 +18,11 @@
   "homepage": "https://github.com/MoreBlood/jquery-ajax#readme",
   "dependencies": {
     "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.8.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-es6-recommended": "^0.1.2"
   }
 }
