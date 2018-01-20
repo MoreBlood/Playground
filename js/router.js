@@ -10,12 +10,13 @@
       this.getPage(document.location.hash);
 
       // add listners to navigation header
+      const that = this;
       $(`${this.HEADER} a`).click(function (e) {
         e.preventDefault();
         const path = $(this).attr('href');
         // add path to url
         window.history.replaceState({}, path, path);
-        this.getPage(path);
+        that.getPage(path);
       });
     }
 
