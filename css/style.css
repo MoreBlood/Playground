@@ -3,6 +3,7 @@ header {
     width: 100%;
     background: cornflowerblue;
     justify-content: space-between;
+    transition: all 0.2s ease-in-out;
 }
 
 .header__element {
@@ -24,6 +25,7 @@ footer {
     background: cadetblue;
     color: white;
     justify-content: space-between;
+    transition: all 0.2s ease-in-out;
 }
 
 .footer__element {
@@ -34,6 +36,7 @@ article {
     padding: 20px;
     flex-grow: 1;
     max-width: 600px;
+    transition: all 0.2s ease-in-out;
 }
 
 article img {
@@ -58,4 +61,26 @@ ul.nav-ul {
 }
 
 article h1 {
+}
+
+.show-off {
+    background: #00000075;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.image-holder {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gallery__element.sky {
+    background-image: url(../images/skynight_small.jpg);
 }
